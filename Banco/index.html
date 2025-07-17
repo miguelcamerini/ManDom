@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Miguel Garcia</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="quadradoInterface">
+        <h1 id="nomeBanco">BANCO MIGUEL GARCIA</h1>
+        
+        <h1>______________</h1>
+        <br>
+        <h1>Caixa Eletrônico</h1>
+
+        <div class="caixaSaldo">
+            <h2>Saldo Atual: R$ <span id="saldoEmTela">0.00</span></h2>
+        </div>
+
+        <div class="areaTransacoes">
+            <input type="number" id="vlrDigitado" placeholder="Digite o valor" min="0" step="0.01">
+            <button id="depositar">Depositar</button>
+            <button id="sacar">Sacar</button>
+        </div>
+
+        <div id="historico">
+            <h3>Histórico de Movimentações</h3>
+            <ol id="listHistorico">  </ol>
+        </div>
+
+    <script src="index.js"></script> 
+</body>
+</html>
